@@ -15,13 +15,23 @@
     .spotifyContainer {
       border-radius: 12px;
       overflow: hidden;
-      margin-bottom: 20px; /* Add margin between the playlists */
+      margin-right: 20px;/* Add margin between the playlists */
     }
 
     iframe {
-      width: 100%;
-      height: 352px;
+      width: 100vh;
+      height: 100vh;
       border: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .spotifyContainer {
+        margin-bottom: 20px; /* Adjust margin for better spacing */
+      }
     }
   </style>
 </head>
